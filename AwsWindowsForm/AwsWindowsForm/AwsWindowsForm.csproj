@@ -49,6 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AmazonApiHelper.cs" />
+    <Compile Include="AwsExampleMsjWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AwsExampleMsjWait.Designer.cs">
+      <DependentUpon>AwsExampleMsjWait.cs</DependentUpon>
+    </Compile>
     <Compile Include="AwsExampleNav.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     <Compile Include="Transferencia.cs" />
     <EmbeddedResource Include="AwsExampleMain.resx">
       <DependentUpon>AwsExampleMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AwsExampleMsjWait.resx">
+      <DependentUpon>AwsExampleMsjWait.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AwsExampleNav.resx">
       <DependentUpon>AwsExampleNav.cs</DependentUpon>
