@@ -39,7 +39,8 @@ namespace AwsWindowsForm
         {
             string palabra = txtProduct.Text;
             AmazonApiHelper AwsApiHelp2 = new AmazonApiHelper(Valor.MyTag(), Valor.MyKeyId(), Valor.SecretKey());
-            string urlSearch2 = AwsApiHelp2.GetRequestUri(palabra);
+            // string urlSearch2 = AwsApiHelp2.GetRequestUri(palabra);
+            string urlSearch2 = Valor.UrlCliente(palabra, comboBox1.SelectedItem.ToString());
             txtUrl.Text = urlSearch2;
             string json2 = AwsApiHelp2.ExecuteWebRequest(urlSearch2, palabra);
             DataTable dt2 = new DataTable();
@@ -85,6 +86,13 @@ namespace AwsWindowsForm
             BusquedaArticulo();
             K.Close();
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string palabra = txtProduct.Text;
+            Transferencia Valor = Transferencia.Instance();
+            txtUrl.Text = Valor.UrlCliente(palabra,comboBox1 .SelectedItem.ToString());
         }
     }
 }
