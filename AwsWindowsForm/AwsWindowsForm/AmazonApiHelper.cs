@@ -28,7 +28,6 @@ namespace AwsWindowsForm
 
         private const string canonicalQsFormat = "AWSAccessKeyId={2}&AssociateTag={3}&Keywords={5}&Operation={1}&ResponseGroup={6}&SearchIndex={4}&Service={0}&Timestamp={7}";
 
-        // private const string canonicalQsFormatAsin = "AWSAccessKeyId={2}&AssociateTag={3}&IdType=ASIN{5}&ItemId=&Operation={1}&ResponseGroup={6}&Service={0}&Timestamp={7}";
 
 
         private const string dateFormat = "yyyy-MM-ddTHH:mm:ss.000Z";
